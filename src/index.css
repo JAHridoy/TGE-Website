@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 214 33% 97%;
+    --foreground: 210 11% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 11% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 11% 11%;
+
+    --primary: 207 100% 11%;
+    --primary-foreground: 0 0% 100%;
+
+    --primary-container: 209 52% 20%;
+    --primary-container-foreground: 213 30% 63%;
+
+    --secondary: 209 72% 37%;
+    --secondary-foreground: 0 0% 100%;
+
+    --tertiary: 27 100% 10%;
+    --tertiary-foreground: 0 0% 100%;
+    --tertiary-container: 27 100% 16%;
+    --on-tertiary-container: 27 89% 49%;
+
+    --muted: 214 20% 95%;
+    --muted-foreground: 215 6% 29%;
+
+    --accent: 214 20% 95%;
+    --accent-foreground: 209 52% 20%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 218 18% 81%;
+    --input: 218 18% 81%;
+    --ring: 209 72% 37%;
+
+    --radius: 0.5rem;
+
+    --surface: 214 33% 97%;
+    --surface-container-lowest: 0 0% 100%;
+    --surface-container-low: 216 18% 96%;
+    --surface-container: 213 13% 94%;
+    --surface-container-high: 213 10% 91%;
+    --surface-container-highest: 213 10% 88%;
+    --surface-variant: 213 10% 88%;
+
+    --on-surface: 210 11% 11%;
+    --on-surface-variant: 214 7% 28%;
+
+    --outline: 215 4% 47%;
+    --outline-variant: 218 6% 79%;
+
+    --secondary-container: 213 99% 74%;
+    --on-secondary-container: 207 100% 25%;
+
+    --cta-orange: 27 89% 52%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-surface text-on-surface font-body antialiased;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  .glass-nav {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  .ambient-glow {
+    box-shadow: 0 12px 40px -5px rgba(25, 28, 30, 0.06);
+  }
+  .asymmetric-shape {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  .hero-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
