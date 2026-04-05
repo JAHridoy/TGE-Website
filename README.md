@@ -50,17 +50,7 @@ npm run dev
 npm run build
 ```
 
----
 
-## 🏆 Credits & Attribution
-This project is the result of a collaborative AI-enhanced development workflow:
-
-- **Original Concept & Design**: [Lovable.dev](https://lovable.dev)
-- **Comprehensive Overhaul & Content Curation**: [Antigravity AI](https://google.com) (Advanced Agentic Architecture by Google DeepMind).
-- **Executive Direction**: Titas Global Education Team.
-- **Photography**: 
-  - Premium Destination Imagery: Unsplash
-  - Institutional Hub Asset: AI-Generated (Strategic Consultancy Hero)
 
 ---
 
