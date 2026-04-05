@@ -152,7 +152,8 @@ const ConsultationPage = () => {
       message += `\nPlease guide me on the next steps.`;
 
       const encodedMessage = encodeURIComponent(message);
-      const whatsappUrl = `https://wa.me/8801335115769?text=${encodedMessage}`;
+      const targetPhone = formData.preferredCountry === "Malaysia" ? "8801335115768" : "8801335115769";
+      const whatsappUrl = `https://wa.me/${targetPhone}?text=${encodedMessage}`;
       
       setTimeout(() => {
         window.location.href = whatsappUrl;
@@ -267,7 +268,7 @@ const ConsultationPage = () => {
               {step === 2 && (
                 <div className="space-y-8 animate-in fade-in slide-in-from-right-8 duration-500">
                   <div className="space-y-2">
-                    <h2 className="text-2xl font-black text-primary tracking-tight">Where do you want to head?</h2>
+                    <h2 className="text-2xl font-black text-primary tracking-tight">Where do you want to go?</h2>
                     <p className="text-sm text-on-surface-variant">Select your preferred destination and study level.</p>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
