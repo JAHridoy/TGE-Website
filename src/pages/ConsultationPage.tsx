@@ -134,6 +134,11 @@ const ConsultationPage = () => {
       
       toast.success("Assessment Complete! Redirecting to WhatsApp...");
 
+      // Facebook Pixel Lead Tracking
+      if (typeof window !== 'undefined' && window.fbq) {
+        window.fbq('track', 'Lead');
+      }
+
       // WhatsApp Bridge
       let message = `Hi TGE Team, I just completed the Study Abroad Eligibility Check on your website.\n\n`;
       message += `Eligibility Score: ${score}/100\n`;

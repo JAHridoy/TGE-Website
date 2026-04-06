@@ -24,31 +24,35 @@ const queryClient = new QueryClient();
 
 import ScrollToTop from "./components/ScrollToTop";
 
+import FBPixelProvider from "./components/FBPixelProvider";
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/countries" element={<CountriesPage />} />
-          <Route path="/countries/cyprus" element={<CyprusPage />} />
-          <Route path="/countries/australia" element={<AustraliaPage />} />
-          <Route path="/countries/uk" element={<UKPage />} />
-          <Route path="/countries/canada" element={<CanadaPage />} />
-          <Route path="/countries/hungary" element={<HungaryPage />} />
-          <Route path="/countries/malta" element={<MaltaPage />} />
-          <Route path="/countries/malaysia" element={<MalaysiaPage />} />
-          <Route path="/countries/lithuania" element={<LithuaniaPage />} />
-          <Route path="/consultation" element={<ConsultationPage />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-of-service" element={<TermsOfService />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <FBPixelProvider>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/countries" element={<CountriesPage />} />
+            <Route path="/countries/cyprus" element={<CyprusPage />} />
+            <Route path="/countries/australia" element={<AustraliaPage />} />
+            <Route path="/countries/uk" element={<UKPage />} />
+            <Route path="/countries/canada" element={<CanadaPage />} />
+            <Route path="/countries/hungary" element={<HungaryPage />} />
+            <Route path="/countries/malta" element={<MaltaPage />} />
+            <Route path="/countries/malaysia" element={<MalaysiaPage />} />
+            <Route path="/countries/lithuania" element={<LithuaniaPage />} />
+            <Route path="/consultation" element={<ConsultationPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </FBPixelProvider>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
