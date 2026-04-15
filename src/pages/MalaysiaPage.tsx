@@ -39,19 +39,19 @@ const MalaysiaPage = () => {
     {
       name: "Universiti Malaya (UM)",
       location: "Kuala Lumpur • Research Leader",
-      img: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=800",
+      img: "/assets/um_uni.png",
       link: "/consultation?country=Malaysia"
     },
     {
       name: "Monash University Malaysia",
       location: "Subang Jaya • Global Top 100",
-      img: "https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80&w=800",
+      img: "/assets/monash_malaysia.png",
       link: "/consultation?country=Malaysia"
     },
     {
       name: "Taylor's University",
       location: "Subang Jaya • Ranked #1 Private",
-      img: "https://images.unsplash.com/photo-1523050853064-db0ef93d484d?auto=format&fit=crop&q=80&w=800",
+      img: "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&q=80&w=800",
       link: "/consultation?country=Malaysia"
     }
   ];
@@ -130,7 +130,7 @@ const MalaysiaPage = () => {
               <img 
                 className="w-full h-[460px] object-cover" 
                 alt="Malaysian University Landmarks" 
-                src="https://images.unsplash.com/photo-1528605248644-14dd04cb21c7?auto=format&fit=crop&q=80&w=1200"
+                src="/assets/malaysia_hero.png"
               />
             </div>
             <div className="absolute -bottom-6 -left-8 bg-surface-container-lowest p-5 rounded-2xl shadow-xl hidden lg:block border border-gray-50">

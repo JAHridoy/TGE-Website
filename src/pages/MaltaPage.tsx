@@ -39,19 +39,19 @@ const MaltaPage = () => {
     {
       name: "University of Malta",
       location: "Msida • Public Research Hub",
-      img: "https://images.unsplash.com/photo-1590424753062-32534466b701?auto=format&fit=crop&q=80&w=800",
+      img: "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&q=80&w=800",
       link: "/consultation?country=Malta"
     },
     {
       name: "MCAST",
       location: "Paola • Technical Specialist",
-      img: "https://images.unsplash.com/photo-1523050853064-db0ef93d484d?auto=format&fit=crop&q=80&w=800",
+      img: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800",
       link: "/consultation?country=Malta"
     },
     {
       name: "London School of Commerce",
       location: "Floriana • Business Focused",
-      img: "https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80&w=800",
+      img: "https://images.unsplash.com/photo-1607237138185-efd9571f9f90?auto=format&fit=crop&q=80&w=800",
       link: "/consultation?country=Malta"
     }
   ];
@@ -130,7 +130,7 @@ const MaltaPage = () => {
               <img 
                 className="w-full h-[460px] object-cover" 
                 alt="Malta Island Views" 
-                src="https://images.unsplash.com/photo-1544717305-27a734ef1904?auto=format&fit=crop&q=80&w=1200"
+                src="https://images.unsplash.com/photo-1529680459049-bf0340fa0755?auto=format&fit=crop&q=80&w=1200"
               />
             </div>
             <div className="absolute -bottom-6 -left-8 bg-surface-container-lowest p-5 rounded-2xl shadow-xl hidden lg:block border border-gray-50">

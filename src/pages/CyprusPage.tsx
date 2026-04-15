@@ -32,19 +32,19 @@ const CyprusPage = () => {
     {
       name: "University of Nicosia",
       location: "Nicosia • Top 500 Worldwide",
-      img: "https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80&w=800",
+      img: "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&q=80&w=800",
       link: "/consultation?country=Cyprus"
     },
     {
       name: "UCLan Cyprus",
       location: "Larnaca • British Academic Standards",
-      img: "https://images.unsplash.com/photo-1523050853064-db0ef93d484d?auto=format&fit=crop&q=80&w=800",
+      img: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800",
       link: "/consultation?country=Cyprus"
     },
     {
       name: "Neapolis University Pafos",
       location: "Pafos • Innovation Excellence",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuB9jjO8kw202URWEp5EXtHZULQhv11K-2FwkxcGZceJd_NA0RQlqBFBIcvtbhUfshtV2LGJ_E6uCOt4CojzDDriAgqYJZvJi1PbwPCrcdHfm-0K_YnwQxgHjt2yzGEfO_fJCsB6ENh__1fUSW4mbADE5HJqiXkZL5nbrwRQVhFGbrEaFf22CVu9BZxP2UGB3VFJzeHJhFYY1eDkkXwFauv8oEttHa6QbRDwXtElHgXxk2hDCWlr7G1Zzey61J5-uoj5SjZAV833psUA",
+      img: "https://images.unsplash.com/photo-1607237138185-efd9571f9f90?auto=format&fit=crop&q=80&w=800",
       link: "/consultation?country=Cyprus"
     }
   ];
@@ -134,7 +134,7 @@ const CyprusPage = () => {
               <img
                 className="w-full h-[460px] object-cover"
                 alt="Mediterranean University Campus"
-                src="https://images.unsplash.com/photo-1543163359-4821e7e7ff41?auto=format&fit=crop&q=80&w=1200"
+                src="https://images.unsplash.com/photo-1515859005217-8a1f08870f59?auto=format&fit=crop&q=80&w=1200"
               />
             </div>
             <div className="absolute -bottom-6 -left-8 bg-surface-container-lowest p-5 rounded-2xl shadow-xl hidden lg:block border border-gray-50">
@@ -271,7 +271,7 @@ const CyprusPage = () => {
                 <img
                   className="w-full h-[500px] object-cover"
                   alt="Mediterranean Life"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxee71uJT1gzKvXocIXnC8M6smlpGHompGb8BBTpH5VwMWoRTGAR1Bbgh31K89EONo_bIzM0B-tzrbiXVK-D7_vmSMpsqhBdus8uS8N5G396DrpEOL-85VyAw8gW55ltsqQC8rfkGulZ1kdFdBj3x_mnN0uUTw4R0fDHThvNfjgEON7WG70ukmsXrwy3IDig1H0JzoGP5-NkR84nnYTcqjda4xJjv3zGnrJzvK6rbwdlFslH5eTnU3EEIyYqsMeZg-mk_rZEwrI38I"
+                  src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?auto=format&fit=crop&q=80&w=1200"
                 />
               </div>
             </div>

@@ -39,19 +39,19 @@ const LithuaniaPage = () => {
     {
       name: "Vilnius University",
       location: "Vilnius • Historic Global Rank",
-      img: "https://images.unsplash.com/photo-1590424753062-32534466b701?auto=format&fit=crop&q=80&w=800",
+      img: "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&q=80&w=800",
       link: "/consultation?country=Lithuania"
     },
     {
       name: "Kaunas University of Technology",
       location: "Kaunas • Tech & Innovation",
-      img: "https://images.unsplash.com/photo-1544717305-27a734ef1904?auto=format&fit=crop&q=80&w=1200",
+      img: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800",
       link: "/consultation?country=Lithuania"
     },
     {
       name: "Vilnius TECH",
       location: "Vilnius • Engineering Hub",
-      img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200",
+      img: "https://images.unsplash.com/photo-1607237138185-efd9571f9f90?auto=format&fit=crop&q=80&w=800",
       link: "/consultation?country=Lithuania"
     }
   ];
@@ -130,7 +130,7 @@ const LithuaniaPage = () => {
               <img 
                 className="w-full h-[460px] object-cover" 
                 alt="Lithuanian Tech University" 
-                src="https://images.unsplash.com/photo-1549413247-f417f77f9850?auto=format&fit=crop&q=80&w=1200"
+                src="https://images.unsplash.com/photo-1562602161-12793aa89091?auto=format&fit=crop&q=80&w=1200"
               />
             </div>
             <div className="absolute -bottom-6 -left-8 bg-surface-container-lowest p-5 rounded-2xl shadow-xl hidden lg:block border border-gray-50">

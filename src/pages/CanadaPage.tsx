@@ -39,19 +39,19 @@ const CanadaPage = () => {
     {
       name: "University of Toronto",
       location: "Toronto • Global Research #1 in CA",
-      img: "https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80&w=800",
+      img: "/assets/toronto_uni.png",
       link: "/consultation?country=Canada"
     },
     {
       name: "McGill University",
       location: "Montreal • Global #30",
-      img: "https://images.unsplash.com/photo-1523050853064-db0ef93d484d?auto=format&fit=crop&q=80&w=800",
+      img: "/assets/mcgill_uni.png",
       link: "/consultation?country=Canada"
     },
     {
       name: "University of British Columbia",
       location: "Vancouver • Sustainability Hub",
-      img: "https://images.unsplash.com/photo-1544717305-27a734ef1904?auto=format&fit=crop&q=80&w=800",
+      img: "/assets/ubc_uni.png",
       link: "/consultation?country=Canada"
     }
   ];
@@ -130,7 +130,7 @@ const CanadaPage = () => {
               <img 
                 className="w-full h-[460px] object-cover" 
                 alt="Canadian University Campus" 
-                src="https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80&w=1200"
+                src="/assets/canada_hero.png"
               />
             </div>
             <div className="absolute -bottom-6 -left-8 bg-surface-container-lowest p-5 rounded-2xl shadow-xl hidden lg:block border border-gray-50">

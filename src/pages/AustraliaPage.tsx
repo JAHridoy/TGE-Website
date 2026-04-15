@@ -39,19 +39,19 @@ const AustraliaPage = () => {
     {
       name: "University of Melbourne",
       location: "Melbourne • Global #14",
-      img: "https://images.unsplash.com/photo-1590424753062-32534466b701?auto=format&fit=crop&q=80&w=800",
+      img: "/assets/melbourne_uni.png",
       link: "/consultation?country=Australia"
     },
     {
       name: "University of Sydney",
       location: "Sydney • Global #19",
-      img: "https://images.unsplash.com/photo-1523050853064-db0ef93d484d?auto=format&fit=crop&q=80&w=800",
+      img: "/assets/sydney_uni.png",
       link: "/consultation?country=Australia"
     },
     {
       name: "Australian National University",
       location: "Canberra • Research Leader",
-      img: "https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80&w=800",
+      img: "/assets/anu_uni.png",
       link: "/consultation?country=Australia"
     }
   ];
@@ -130,7 +130,7 @@ const AustraliaPage = () => {
               <img 
                 className="w-full h-[460px] object-cover" 
                 alt="Australian University Campus" 
-                src="https://images.unsplash.com/photo-1544717305-27a734ef1904?auto=format&fit=crop&q=80&w=1200"
+                src="/assets/australia_hero.png"
               />
             </div>
             <div className="absolute -bottom-6 -left-8 bg-surface-container-lowest p-5 rounded-2xl shadow-xl hidden lg:block border border-gray-50">

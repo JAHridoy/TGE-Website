@@ -39,19 +39,19 @@ const HungaryPage = () => {
     {
       name: "Eötvös Loránd University",
       location: "Budapest • Research Leader",
-      img: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800",
+      img: "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&q=80&w=800",
       link: "/consultation?country=Hungary"
     },
     {
       name: "University of Debrecen",
       location: "Debrecen • Medical Excellence",
-      img: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=800",
+      img: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800",
       link: "/consultation?country=Hungary"
     },
     {
       name: "University of Pecs",
       location: "Pecs • Innovation Hub",
-      img: "https://images.unsplash.com/photo-1523050853064-db0ef93d484d?auto=format&fit=crop&q=80&w=800",
+      img: "https://images.unsplash.com/photo-1607237138185-efd9571f9f90?auto=format&fit=crop&q=80&w=800",
       link: "/consultation?country=Hungary"
     }
   ];
@@ -130,7 +130,7 @@ const HungaryPage = () => {
               <img 
                 className="w-full h-[460px] object-cover" 
                 alt="Hungarian University Campus" 
-                src="https://images.unsplash.com/photo-1551842915-1815db45ec59?auto=format&fit=crop&q=80&w=1200"
+                src="/assets/hungary_hero.png"
               />
             </div>
             <div className="absolute -bottom-6 -left-8 bg-surface-container-lowest p-5 rounded-2xl shadow-xl hidden lg:block border border-gray-50">

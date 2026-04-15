@@ -86,10 +86,10 @@ const HomePage = () => {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { name: "United Kingdom", subtitle: "Academic Excellence", img: "/uk.png", link: "/countries/uk" },
-            { name: "Australia", subtitle: "Innovation Hub", img: "/australia.png", link: "/countries/australia" },
-            { name: "Hungary", subtitle: "Academic Heritage", img: "/hungary.png", link: "/countries/hungary" },
-            { name: "Malaysia", subtitle: "Diverse Excellence", img: "/malaysia.png", link: "/countries/malaysia" },
+            { name: "United Kingdom", subtitle: "Academic Excellence", img: "/assets/uk_hero.png", link: "/countries/uk" },
+            { name: "Australia", subtitle: "Innovation Hub", img: "/assets/australia_hero.png", link: "/countries/australia" },
+            { name: "Hungary", subtitle: "Academic Heritage", img: "/assets/hungary_hero.png", link: "/countries/hungary" },
+            { name: "Malaysia", subtitle: "Diverse Excellence", img: "/assets/malaysia_hero.png", link: "/countries/malaysia" },
           ].map((country) => (
             <Link key={country.name} to={country.link} className="group cursor-pointer">
               <div className="relative h-80 rounded-2xl overflow-hidden mb-6 bg-surface-container-highest">
@@ -162,7 +162,7 @@ const HomePage = () => {
           </div>
           <div className="relative">
             <div className="rounded-3xl overflow-hidden shadow-2xl bg-surface-container-highest">
-              <img alt="Academic counseling session" className="w-full h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYyFFwavlTBZ-jNoaGF2xsoUaYDTTHIWCWbMdRF5Ap6lAedE55AGDarYppibcZU518gDgqdbtXXQXGeHSMAkQoY_0JNq2iWwquBf8Wh7afyiu9V_yxCB-_TK_pHCIpRfe5W1on_eXWCC8HYpsqOpmTILvEP1GN80Wf9AGWuuedtQPdHCbXnqoNZgTZt35wfMgmQldM6cEKosspDcFFXZMLARiXTSU0p1Axr7jOZbSCWjP29oAovCOUOK6qwlHPrePuNKvo5G7KBtF2" />
+              <img alt="Academic counseling session" className="w-full h-[500px] object-cover" src="https://images.unsplash.com/photo-1523240715624-890ce5225504?auto=format&fit=crop&q=80&w=1200" />
             </div>
             <div className="absolute top-8 -right-8 bg-surface-container-lowest py-3 px-6 rounded-full shadow-lg flex items-center gap-2 hidden lg:flex">
               <span className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>public</span>

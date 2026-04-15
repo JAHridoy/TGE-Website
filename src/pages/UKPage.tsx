@@ -39,19 +39,19 @@ const UKPage = () => {
     {
       name: "University of Oxford",
       location: "Oxford • Global #1",
-      img: "https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80&w=800",
+      img: "/assets/oxford_uni.png",
       link: "/consultation?country=United%20Kingdom"
     },
     {
       name: "Imperial College London",
       location: "London • STEM Excellence",
-      img: "https://images.unsplash.com/photo-1544717305-27a734ef1904?auto=format&fit=crop&q=80&w=800",
+      img: "/assets/imperial_uni.png",
       link: "/consultation?country=United%20Kingdom"
     },
     {
       name: "University of Edinburgh",
       location: "Scotland • Global #22",
-      img: "https://images.unsplash.com/photo-1523050853064-db0ef93d484d?auto=format&fit=crop&q=80&w=800",
+      img: "/assets/edinburgh_uni.png",
       link: "/consultation?country=United%20Kingdom"
     }
   ];
@@ -130,7 +130,7 @@ const UKPage = () => {
               <img 
                 className="w-full h-[460px] object-cover" 
                 alt="UK University Campus" 
-                src="https://images.unsplash.com/photo-1519834785169-98be25ec3f84?auto=format&fit=crop&q=80&w=1200"
+                src="/assets/uk_hero.png"
               />
             </div>
             <div className="absolute -bottom-6 -left-8 bg-surface-container-lowest p-5 rounded-2xl shadow-xl hidden lg:block border border-gray-50">
