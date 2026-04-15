@@ -153,18 +153,27 @@ const ConsultationPage = () => {
     let message = `Hi TGE Team, I just completed my study abroad eligibility check on your website.\n\n`;
     message += `📋 ASSESSMENT RESULTS:\n`;
     message += `- Name: ${formData.fullName}\n`;
+    if (formData.city) message += `- From: ${formData.city}\n`;
     message += `- Target: ${formData.preferredCountry} (${formData.programLevel})\n`;
     message += `- Intake: ${formData.preferredIntake}\n`;
     message += `- Budget: ${formData.budgetRange}\n`;
 
     if (formData.englishProficiency) {
-      if (formData.englishProficiency !== "NOT AVAILABLE") {
-        message += `- English: ${formData.englishProficiency} (Score: ${formData.englishScore})\n`;
-      } else {
+      if (formData.englishProficiency === "NOT AVAILABLE") {
         message += `- English: NO (${formData.noEnglishStatus})\n`;
+      } else if (formData.englishProficiency === "MOI") {
+        message += `- English: MOI (Medium of Instruction)\n`;
+      } else {
+        message += `- English: ${formData.englishProficiency} (Score: ${formData.englishScore})\n`;
       }
     }
 
+    message += `\n🎓 ACADEMICS:\n`;
+    if (formData.sscResult) message += `- SSC: ${formData.sscResult} (${formData.sscYear})\n`;
+    if (formData.hscResult) message += `- HSC: ${formData.hscResult} (${formData.hscYear})\n`;
+    if (formData.bachelorResult) message += `- Bachelor: ${formData.bachelorResult} (${formData.bachelorYear})\n`;
+
+    message += `\n🛡️ READINESS:\n`;
     if (formData.bankReadiness) {
       if (formData.bankReadiness === "READY") {
         message += `- Bank Status: READY (${formData.bankType}, ${formData.bankDuration} Months)\n`;
@@ -172,8 +181,12 @@ const ConsultationPage = () => {
         message += `- Bank Status: NOT READY\n`;
       }
     }
-
     message += `- Passport: ${formData.passportStatus}\n`;
+
+    if (formData.additionalNote) {
+      message += `\n📝 NOTE: ${formData.additionalNote}\n`;
+    }
+
     message += `\n`;
     message += `Please guide me on the next steps for my enrollment.`;
     return message;
@@ -240,7 +253,7 @@ const ConsultationPage = () => {
           toast.error("Please select an English Proficiency option.");
           return;
         }
-        if (formData.englishProficiency !== "NOT AVAILABLE" && !formData.englishScore) {
+        if (formData.englishProficiency && !["NOT AVAILABLE", "MOI"].includes(formData.englishProficiency) && !formData.englishScore) {
           toast.error("Please enter your English Score.");
           window.scrollTo({ top: 300, behavior: 'smooth' });
           return;
@@ -611,7 +624,7 @@ const ConsultationPage = () => {
                                 onClick={() => setFormData({
                                   ...formData,
                                   englishProficiency: p,
-                                  englishScore: p === "NOT AVAILABLE" ? "" : formData.englishScore,
+                                  englishScore: ["NOT AVAILABLE", "MOI"].includes(p) ? "" : formData.englishScore,
                                   noEnglishStatus: p !== "NOT AVAILABLE" ? "" : formData.noEnglishStatus
                                 })}
                                 className={`w-full h-14 md:h-16 px-2 rounded-2xl text-[11px] md:text-xs font-bold uppercase transition-all border-2 flex items-center justify-center text-center leading-tight tracking-wide ${formData.englishProficiency === p ? "bg-secondary text-white border-secondary shadow-md" : "bg-surface-container-low border-transparent text-on-surface-variant hover:border-outline-variant"
@@ -623,16 +636,22 @@ const ConsultationPage = () => {
                           </div>
 
                           {/* Conditional Score Inputs */}
-                          {(formData.englishProficiency && formData.englishProficiency !== "NOT AVAILABLE") && (
+                          {(formData.englishProficiency && !["NOT AVAILABLE", "MOI"].includes(formData.englishProficiency)) && (
                             <div className="mt-6 space-y-2 animate-in fade-in slide-in-from-top-2 duration-300">
                               <label className="text-[12px] md:text-sm uppercase font-bold text-primary mb-2 block tracking-widest text-on-surface-variant/80">
-                                English Score
+                                {formData.englishProficiency === "OTHER" ? "Specify Test & Score" : "English Score"}
                               </label>
                               <input
                                 type="text"
                                 value={formData.englishScore}
                                 onChange={e => setFormData({ ...formData, englishScore: e.target.value })}
-                                placeholder={`e.g. ${formData.englishProficiency === "IELTS" ? "6.5" : formData.englishProficiency === "PTE" ? "58" : formData.englishProficiency === "TOEFL" ? "90" : "7.5"}`}
+                                placeholder={
+                                  formData.englishProficiency === "IELTS" ? "e.g. 6.5" :
+                                  formData.englishProficiency === "PTE" ? "e.g. 58" :
+                                  formData.englishProficiency === "TOEFL" ? "e.g. 90" :
+                                  formData.englishProficiency === "OTHER" ? "e.g. Duolingo 120, OIETC etc." :
+                                  "e.g. 7.5"
+                                }
                                 className="w-full h-14 md:h-16 bg-surface-container-low border border-outline-variant/30 rounded-2xl px-5 text-sm font-semibold focus:ring-4 focus:ring-secondary/10 transition-all outline-none"
                               />
                             </div>

@@ -86,12 +86,12 @@ const HomePage = () => {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { name: "United Kingdom", subtitle: "Academic Excellence", img: "/uk.png" },
-            { name: "Australia", subtitle: "Innovation Hub", img: "/australia.png" },
-            { name: "Hungary", subtitle: "Academic Heritage", img: "/hungary.png" },
-            { name: "Malaysia", subtitle: "Diverse Excellence", img: "/malaysia.png" },
+            { name: "United Kingdom", subtitle: "Academic Excellence", img: "/uk.png", link: "/countries/uk" },
+            { name: "Australia", subtitle: "Innovation Hub", img: "/australia.png", link: "/countries/australia" },
+            { name: "Hungary", subtitle: "Academic Heritage", img: "/hungary.png", link: "/countries/hungary" },
+            { name: "Malaysia", subtitle: "Diverse Excellence", img: "/malaysia.png", link: "/countries/malaysia" },
           ].map((country) => (
-            <div key={country.name} className="group cursor-pointer">
+            <Link key={country.name} to={country.link} className="group cursor-pointer">
               <div className="relative h-80 rounded-2xl overflow-hidden mb-6 bg-surface-container-highest">
                 <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src={country.img} alt={country.name} />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
@@ -100,7 +100,7 @@ const HomePage = () => {
                   <p className="text-primary-foreground/80 text-sm">{country.subtitle}</p>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
